@@ -15,8 +15,14 @@ To force rebuilding the pip package from source (you'll need requirments.txt or 
 
 To force bundling libcapnp (or force system libcapnp), just in case pip isn't doing the right thing::
 
-    pip install --no-binary :all: -C force-bundled-libcapnp=True
-    pip install --no-binary :all: -C force-system-libcapnp=True
+    pip install --no-binary :all: -C force-bundled-libcapnp=True pycapnp
+    pip install --no-binary :all: -C force-system-libcapnp=True pycapnp
+
+    or one of the following:
+    export FORCE_BUNDLED_LIBCAPNP=1
+    export FORCE_SYSTEM_LIBCAPNP=1
+    then:
+    pip install --no-binary :all: pycapnp
 
 If you're using an older Linux distro (e.g. CentOS 6) you many need to set `LDFLAGS="-Wl,--no-as-needed -lrt"`::
 

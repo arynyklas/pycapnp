@@ -1,3 +1,6 @@
+## v2.0.0.rc1 (2025-05-04)
+- Process `--force-bundled-libcapnp` and `--force-system-libcapnp` CLI kwargs in environment as "FORCE_BUNDLED_LIBCAPNP" and "FORCE_SYSTEM_LIBCAPNP" respectively
+
 ## v2.0.0 (2024-01-19)
 - Updated link for mailing list in README
 

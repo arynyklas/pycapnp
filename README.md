@@ -46,6 +46,11 @@ To enforce bundling, the Cap'n Proto library:
 ```bash
 pip install . -C force-bundled-libcapnp=True
 ```
+or
+```bash
+export FORCE_BUNDLED_LIBCAPNP=1
+pip install .
+```
 
 If you wish to install using the latest upstream C++ Cap'n Proto:
 
@@ -59,6 +64,11 @@ To enforce using the installed Cap'n Proto from the system:
 
 ```bash
 pip install . -C force-system-libcapnp=True
+```
+or
+```bash
+export FORCE_SYSTEM_LIBCAPNP=1
+pip install .
 ```
 
 The bundling system isn't that smart so it might be necessary to clean up the bundled build when changing versions:
